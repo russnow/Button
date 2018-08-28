@@ -36,7 +36,12 @@ void SysTick_Handler(void)
 														if (Button_state ==0)
 													{
 														Button_state=1;
-														GPIO_ToggleBits(GPIOB, GPIO_Pin_6);//vkluchaem svetodiod
+														//GPIO_ToggleBits(GPIOB, GPIO_Pin_6);//vkluchaem svetodiod
+														Mode=MODE_GREENSTM;
+														Mode_new =1;
+														BLUE_OFF();
+														HIGH_LED_OFF();
+														LOW_LED_OFF();
 													}
 						}
 						//---------------------------
@@ -84,7 +89,7 @@ int main (void)
 		while(1)
 			{
 
-				/*	if (Mode == MODE_GREENSTM)
+				if (Mode == MODE_GREENSTM)
 							{
 								if (Mode_new ==1)
 									{
@@ -97,7 +102,10 @@ int main (void)
 									{
 						
 										GREENSTM_OFF();
+										if (Button_state ==0)
+										{
 										Mode = MODE_BLUE; // vkl rezhima 
+										}
 										Mode_new =1;
 									}
 							}
@@ -158,6 +166,6 @@ int main (void)
 						Mode = MODE_GREENSTM;
 						Mode_new = 1;
 					}
-				}*/
+				}
 			}
 	}

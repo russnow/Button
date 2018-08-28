@@ -12,7 +12,7 @@
 #define HIGH_LED_OFF()	GPIO_ResetBits(GPIOB, GPIO_Pin_5)
 #define LOW_LED_ON()		GPIO_SetBits(GPIOB, GPIO_Pin_4)
 #define LOW_LED_OFF()		GPIO_ResetBits(GPIOB, GPIO_Pin_4)
-#define DELAY						10 
+#define DELAY						100 
 
 //-------------------------------------------------------------
 // Propisyvayem rezhimy miganiya diodov
