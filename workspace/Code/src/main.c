@@ -5,7 +5,7 @@ uint8_t Mode=0;
 uint16_t Mode_count=0;
 uint8_t Mode_new=0;
 
-uint8_t Button_count=0;
+uint8_t Button_count=0; // ubirAYEM DREBEZG
 uint8_t Button_state=0;
 
 //------------------------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ void SysTick_Handler(void)
 							Mode_count--;
 						}
 						//----------------------
-						//
+						//Nazhatie i othatie cnopki
 						//----------------------
 						if (BUTTON_READ()==1)
 						{
@@ -33,8 +33,10 @@ void SysTick_Handler(void)
 												}
 												
 													else
+														if (Button_state ==0)
 													{
 														Button_state=1;
+														GPIO_ToggleBits(GPIOB, GPIO_Pin_6);//vkluchaem svetodiod
 													}
 						}
 						//---------------------------
@@ -81,15 +83,7 @@ int main (void)
 		//---------------------------------------------------------------------------------
 		while(1)
 			{
-				if (BUTTON_READ() == 1)
-				{
-					GREENSTM_ON();
-				}
-				else
-				{
-					GREENSTM_OFF();
-				}
-					
+
 				/*	if (Mode == MODE_GREENSTM)
 							{
 								if (Mode_new ==1)
