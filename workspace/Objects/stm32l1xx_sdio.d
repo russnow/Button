@@ -1,0 +1,9 @@
+.\objects\stm32l1xx_sdio.o: StdPerph\src\stm32l1xx_sdio.c
+.\objects\stm32l1xx_sdio.o: .\StdPerph\inc\stm32l1xx_sdio.h
+.\objects\stm32l1xx_sdio.o: .\CMSIS\inc\stm32l1xx.h
+.\objects\stm32l1xx_sdio.o: .\CMSIS\inc\core_cm3.h
+.\objects\stm32l1xx_sdio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32l1xx_sdio.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\stm32l1xx_sdio.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\stm32l1xx_sdio.o: .\CMSIS\inc\system_stm32l1xx.h
+.\objects\stm32l1xx_sdio.o: .\StdPerph\inc\stm32l1xx_rcc.h

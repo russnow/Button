@@ -1,0 +1,11 @@
+.\objects\main.o: Code\src\main.c
+.\objects\main.o: .\Code\inc\main.h
+.\objects\main.o: .\Code\inc\mcu_ini.h
+.\objects\main.o: .\CMSIS\inc\stm32l1xx.h
+.\objects\main.o: .\CMSIS\inc\core_cm3.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\main.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\main.o: .\CMSIS\inc\system_stm32l1xx.h
+.\objects\main.o: .\StdPerph\inc\stm32l1xx_rcc.h
+.\objects\main.o: .\StdPerph\inc\stm32l1xx_gpio.h
